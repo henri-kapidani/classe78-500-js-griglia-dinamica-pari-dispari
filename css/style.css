@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	height: 100%;
+	background-color: salmon;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 500px;
+	height: 500px;
+	border: 2px solid black;
+}
+
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	height: calc(100% / 8);
+	width: calc(100% / 8);
+}
+
+.cell.active.even {
+	background-color: gold;
+}
+
+.cell.active.odd {
+	background-color: brown;
+}
